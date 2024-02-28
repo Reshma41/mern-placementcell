@@ -1,0 +1,48 @@
+
+
+body{
+
+
+.btn{
+    width: 200px;
+    height:50px;
+    border-radius:60px;
+    background-color: #b103fc;
+    color:white;
+    font-size: 25px;
+    border:none;
+}
+.first{
+    /*
+    height: 25px;
+    width:250px;
+    position:relative;
+    padding: 14px 0 0 25px;
+    top: 100px;
+    left:5px;
+    bottom:500px;*/
+    height:25px;
+    width:250px;
+    position: sticky;
+    padding: 14px 0 0 25px;
+
+
+}
+.second{
+   /* height: 25px;
+    width: 250px;
+    position:relative;
+    padding:14px 0 0 25px;
+    
+    top: 100px;
+    left:5px;
+    bottom:500px ;*/
+    height:25px;
+    width:250px;
+    position: sticky;
+    padding: 14px 0 0 25px;
+
+}
+}
+
+
