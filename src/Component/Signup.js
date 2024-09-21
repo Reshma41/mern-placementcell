@@ -67,22 +67,22 @@ function Signup() {
                 <div className='imgs'></div>
                 <div className='container-image'></div>               
                  <div>
-                    <input className="first-input"type='text' placeholder='name' name='name' onChange={changefn} />
+                    <input className="first-input" type='text' placeholder='name' name='name' onChange={changefn}required />
                 </div>
                 <div>
-                    <input className='second-input' type="number" placeholder='Enter your number' name="contact" onChange={changefn} />
+                    <input className='second-input' type="number" placeholder='Enter your number' name="contact" onChange={changefn}required/>
                 </div>
                 <div>
-                    <input className='third-input' type='email' placeholder='Enter email' name="email" onChange={changefn} />
+                    <input className='third-input' type='email' placeholder='Enter email' name="email" onChange={changefn}required  />
                 </div>
                 <div>
-                    <input className='fourth-input'type="password" placeholder='password' name="password" onChange={changefn} />
+                    <input className='fourth-input' type="password" placeholder='password' name="password" onChange={changefn} required/>
                 </div>
                 <div>
                     <select name="stream" value={data.stream} onChange={handleSelectChange}>
                         <option value="">Select an option</option>
                         <option value="Data Analytics">Data Analytics</option>
-                        <option value="Data Annotation">Data Annotation</option>
+                        <option value="Data Annotation">Data Annotation</option>  
                         <option value="User Experience">User Experience</option>
                         <option value="Cyber Security">Cyber Security</option>
                         <option value="Research">Research</option>

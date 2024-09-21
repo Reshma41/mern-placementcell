@@ -53,10 +53,10 @@ const navigate=useNavigate()
       <div className={SigninCSS.main}></div>
       <div className={SigninCSS.sub}></div>
         <div>
-            <input type='text'className={SigninCSS.first}placeholder='email'name='email'onChange={changefn}/>
+            <input type='text' className={SigninCSS.first}placeholder='email'name='email'onChange={changefn}/>
     </div>
           <div>
-          <input type='text'className={SigninCSS.second}placeholder='password' name="password"onChange={changefn}/>
+          <input type='password' className={SigninCSS.second}placeholder='password' name="password"onChange={changefn}/>
           </div>
         <button  className={SigninCSS.btn}type="submit" >Login </button>
         <p>Don't you have an account?<Link to='/Signup'>Reg</Link></p>

@@ -1,48 +1,55 @@
+/*.main {/*
+  height: 200px; 
+  width: 100%;
+  background-color: #b103fc;*/
 
 
-body{
+/*.sub {/*
+  height: 150px;
+  width: 100%;
+  background-color: #b103fc;*/
 
 
-.btn{
-    width: 200px;
-    height:50px;
-    border-radius:60px;
-    background-color: #b103fc;
-    color:white;
-    font-size: 25px;
-    border:none;
-}
-.first{
-    /*
-    height: 25px;
-    width:250px;
-    position:relative;
-    padding: 14px 0 0 25px;
-    top: 100px;
-    left:5px;
-    bottom:500px;*/
-    height:25px;
-    width:250px;
-    position: sticky;
-    padding: 14px 0 0 25px;
-
-
-}
-.second{
-   /* height: 25px;
-    width: 250px;
-    position:relative;
-    padding:14px 0 0 25px;
-    
-    top: 100px;
-    left:5px;
-    bottom:500px ;*/
-    height:25px;
-    width:250px;
-    position: sticky;
-    padding: 14px 0 0 25px;
-
-}
+.first,
+.second {
+  width: 300px;
+  height: 40px;
+  border: 2px solid #b103fc;
+  border-radius: 5px;
+  margin: 10px 5px 10px 0;
+  padding: 10px;
+  font-size: 16px;
 }
 
+.btn {
+  width: 320px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #b103fc;
+  color: white;
+  font-size: 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
+/* Add more styles if needed */
+
+h2 {
+  text-align: center;
+  color: #b103fc;
+}
+
+p {
+  text-align: left;
+  margin-top: 20px;
+}
+
+Link {
+  color: #b103fc;
+  text-decoration: none;
+}
+
+Link:hover {
+  text-decoration: underline;
+}

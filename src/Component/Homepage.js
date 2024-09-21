@@ -17,7 +17,7 @@ function Homepage() {
     offeri: null,
   });
 
-  const changefn = (e) => {
+  const changefn = (e) => {  
     setdata({ ...data, [e.target.name]: e.target.value });
   };
 
@@ -204,9 +204,7 @@ function Homepage() {
           </div>
         )}
       </div>
-      <div>
-                    <input onChange={changefn} />
-                </div>
+      
       <div>
         <button className={HomepageCSS.btn} type="submit">Submit<Link to='/Message'></Link></button>
       </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { useEffect,useState } from 'react';
 import {Link,useNavigate} from 'react-router-dom';
 import axios from 'axios';
@@ -8,14 +8,14 @@ function Officerhome() {
     const [responses, setResponses] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  /*useEffect(() => {
     const fetchResponses = async () => {
       try {
         const response = await axios.get('http://localhost:5000/api/Question/Responses');
         console.log("data : ",response.data)
         setResponses(response.data);
         setLoading(false);
-        navigate("/")
+        //navigate("/")
       } catch (error) {
         console.error('Error fetching responses:', error.message);
         setLoading(false);
@@ -23,7 +23,47 @@ function Officerhome() {
     };
 
     fetchResponses();
+  }, []);*/
+  const fetchResponses = async () => {
+    try {
+      const response = await axios.get('http://localhost:5000/api/Question/Responses');
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const responseData = await fetchResponses();
+        
+        
+        console.log("data : ", responseData);
+
+    
+        setResponses(responseData);
+
+        
+        setLoading(false);
+
+        
+         //navigate("/")
+      } catch (error) {
+        
+        console.error('Error fetching responses:', error.message);
+
+        
+        setLoading(false);
+      }
+    };
+
+    
+    fetchData();
+
+    
   }, []);
+
   return (
     <div>
       <div>
